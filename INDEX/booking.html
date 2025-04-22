@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Booking</title>
+<link href="style1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function validate()
+{
+	var name,date1,num1,num2;
+	name=form1.visitor.value
+	date1=form1.date.value
+	num1=form1.adult.value
+	num2=form1.child.value
+	if (name=="")
+	{
+		alert("Please Write Your Name")
+		form1.name.focus()
+	}
+	else if(date1=="")
+	{
+	alert("Please Input The Date Of Visit")
+	form1.date.focus()
+}
+else if(num1=="")
+{
+	alert("Please Input The Number Of Adults !!Else Input 0!!")
+	form1.adult.focus()
+	}
+	else if(num2=="")
+	{
+		alert("Please Input The Number Of Children !!Else Input 0!!")
+		form1.child.focus()
+		}
+		else
+		{
+			alert("Visit Us Soon")
+		}
+		
+}
+</script>
+</head>
+<body>
+<ul id="menu">
+<a href="index.html"><li><font color="yellow">HOME</font></li></a>
+<a href="gallery.html"><li><font color="yellow">Gallery</font></li></a>
+<a href="ticket.html"><li><font color="yellow">Ticket</font></li></a>
+<li><font color="yellow">More</font><ul>
+<a href="facility.html"><li>Facility</li></a>
+<a href="contact.html"><li>Contact</li></a>
+<a href="timing.html"><li>Timings</li></a>
+<a href="booking.html"><li>Online Booking</li></a>
+</ul>
+</li>
+</ul>
+<div class="top"><div class="topinsider1"><a href="index.html"><img src="../Images/logo.jpg" width="150px" height="150px" title="Home"></a></div><div class="topinsider2"><div id="font">JUST CHILL FUN PARK</div></div></div>
+
+	
+	<div class="bodypt1">
+<div class="ibook">
+<div id="textins">
+<center>Online Ticket Booking</center>
+</div>
+
+<form name="form1" onSubmit="validate()">
+<table border="0" width="500" height="400" colspan="2">
+<tr>
+<td width="500" height="42" colspan="2">
+<div id="textins1"><center>Visitor's Name</center></div>
+</td>
+</tr>
+
+<tr>
+<td width="500" height="42" colspan="2">
+<center><input type="text" name="visitor" size="20">
+</center>
+</td></tr>
+
+<tr>
+<td width="500" height="42" colspan="2">
+<div id="textins1"><center>Date Of Visit</center></div>
+</td>
+</tr>
+
+<tr>
+<td width="500" height="42" colspan="2">
+<center><input type="date" name="date"></center></td>
+</tr>
+
+<tr>
+<td width="500" height="42" colspan="2">
+<div id="textins1"><center>Number Of Visitors</center></div>
+</td>
+</tr>
+
+<tr>
+<td width="250" height="42">
+<input type="text" placeholder="Adult" size="10" name="adult" style="float:right">
+</td>
+<td width="250" height="42">
+<input type="text" placeholder="Child" size="10" name="child">
+</td>
+</tr>
+
+<tr>
+<td width="500" height="42" colspan=2>
+<div id="textins1"><center>PHOTO OF LEADER</center></div>
+</td>
+</tr>
+
+<tr>
+<td width="500" height="42" colspan="2">
+<center><input type="file"></center>
+</td>
+</tr>
+</table>
+
+<center><input type="submit" name="submit" id="textins1" class="book"></center>
+</form>
+</div>
+</div>
+
+
+
+
+<div class="footer">
+<img src="../Images/2016-07-26-1.png"><br> <br>
+<a href="https://www.facebook.com/"><img src="../Images/facebook-icon-preview-200x200.png" width="30" height="30" title="Facebook"></a>
+<a href="https://twitter.com/"><img src="../Images/Designbolts-Minimalist-Social-Twitter-2.ico" width="30" height="30" title="Twitter"></a>
+<a href="https://plus.google.com/"><img src="../Images/gmail-email-mail-logo-circle-material.png" width="30" height="30" title="Google+"></a>
+<center><font color="#FFFFFF"><p>CONTACT US on</p>+977-9840564532</font></center>
+<center><p>© 2017 Just Chill Park. All Rights Reserved | Design by Chandan_Aptech</p></center>
+</div>
+</body>
+</html>
